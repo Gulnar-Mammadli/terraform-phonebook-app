@@ -19,7 +19,7 @@ resource "aws_internet_gateway" "internet-gateway" {
 resource "aws_subnet" "first-public-subnet" {
   cidr_block = var.first-public-subnet-cidr
   vpc_id     = aws_vpc.vpc.id
-  availability_zone = "eu-central-1a"
+  availability_zone = "us-east-1a"
   map_public_ip_on_launch = true
 
   tags = {
@@ -30,7 +30,7 @@ resource "aws_subnet" "first-public-subnet" {
 resource "aws_subnet" "second-public-subnet" {
   cidr_block = var.second-public-subnet-cidr
   vpc_id     = aws_vpc.vpc.id
-  availability_zone = "eu-central-1b"
+  availability_zone = "us-east-1b"
   map_public_ip_on_launch = true
 
   tags = {
@@ -64,7 +64,7 @@ resource "aws_route_table_association" "second-public-subnet-route-table-associa
 resource "aws_subnet" "first-private-subnet" {
   cidr_block = var.first-private-subnet-cidr
   vpc_id     = aws_vpc.vpc.id
-  availability_zone = "eu-central-1a"
+  availability_zone = "us-east-1a"
   map_public_ip_on_launch = false
 
   tags = {
@@ -75,7 +75,7 @@ resource "aws_subnet" "first-private-subnet" {
 resource "aws_subnet" "second-private-subnet" {
   cidr_block = var.second-private-subnet-cidr
   vpc_id     = aws_vpc.vpc.id
-  availability_zone = "eu-central-1b"
+  availability_zone = "us-east-1b"
   map_public_ip_on_launch = false
 
   tags = {
@@ -86,7 +86,7 @@ resource "aws_subnet" "second-private-subnet" {
 resource "aws_subnet" "third-private-subnet" {
   cidr_block = var.third-private-subnet-cidr
   vpc_id     = aws_vpc.vpc.id
-  availability_zone = "eu-central-1a"
+  availability_zone = "us-east-1-1a"
   map_public_ip_on_launch = false
 
   tags = {
@@ -97,7 +97,7 @@ resource "aws_subnet" "third-private-subnet" {
 resource "aws_subnet" "fourth-private-subnet" {
   cidr_block = var.fourth-private-subnet-cidr
   vpc_id     = aws_vpc.vpc.id
-  availability_zone = "eu-central-1b"
+  availability_zone = "us-east-1b"
   map_public_ip_on_launch = false
 
   tags = {

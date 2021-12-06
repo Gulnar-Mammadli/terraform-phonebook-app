@@ -30,7 +30,7 @@ resource "aws_launch_template" "launch-frontend" {
   }
 
   placement {
-    availability_zone = "eu-central-1a"
+    availability_zone = "us-east-1a"
   }
 
   tag_specifications {

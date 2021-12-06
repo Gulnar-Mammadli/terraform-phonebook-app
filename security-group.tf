@@ -101,7 +101,7 @@ resource "aws_security_group" "webserver-security-group" {
 
 resource "aws_security_group" "database-security-group" {
   name = "Database Security Group"
-  description = "Enable Mysql accsess on Port 3306"
+  description = "Enable Mysql access on Port 3306"
   vpc_id = aws_vpc.vpc.id
 
   ingress {
