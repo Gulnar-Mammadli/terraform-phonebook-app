@@ -7,13 +7,12 @@ resource "aws_key_pair" "backend-instance-ec2-key" {
   public_key = tls_private_key.template_backend_key.public_key_openssh
 }
 
-//Launch backend instance from sh file
 resource "aws_launch_template" "launch-backend" {
   name = "backend"
 
   instance_type = "t2.micro"
 
-  image_id = "ami-0b61338ea901bed08"
+  image_id = " ami-0ed9277fb7eb570c9 "
 
   instance_initiated_shutdown_behavior = "terminate"
 

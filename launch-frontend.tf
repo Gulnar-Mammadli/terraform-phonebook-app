@@ -12,7 +12,7 @@ resource "aws_launch_template" "launch-frontend" {
   name          = "frontend"
   instance_type = "t2.micro"
 
-  image_id = "ami-0b61338ea901bed08"
+  image_id = " ami-0ed9277fb7eb570c9 "
 
   instance_initiated_shutdown_behavior = "terminate"
 
