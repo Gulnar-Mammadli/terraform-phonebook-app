@@ -86,7 +86,7 @@ resource "aws_subnet" "second-private-subnet" {
 resource "aws_subnet" "third-private-subnet" {
   cidr_block = var.third-private-subnet-cidr
   vpc_id     = aws_vpc.vpc.id
-  availability_zone = "us-east-1-1a"
+  availability_zone = "us-east-1a"
   map_public_ip_on_launch = false
 
   tags = {

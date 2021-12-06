@@ -55,7 +55,7 @@ variable "ssh-location" {
 }
 
 variable "database-snapshot-identifier" {
-  default = "arn:aws:rds:eu-central-1:292842536810:snapshot:mysqldatabase-final-snapshot"
+  default = "arn:aws:rds:us-east-1:292842536810:snapshot:mysqldatabase-final-snapshot"
   description = "The Database Snapshot ARN"
   type = string
 }
